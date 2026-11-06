@@ -1,0 +1,83 @@
+[
+  {
+    "pattern": "burst",
+    "total_requests": 100,
+    "failed": 0,
+    "wall_time_sec": 2.4763319976627827,
+    "p50_sec": 2.434584926813841,
+    "p90_sec": 2.449060267582536,
+    "p95_sec": 2.4515976298600437,
+    "p99_sec": 2.4532704859599472,
+    "mean_sec": 1.9131276294216513,
+    "std_sec": 0.5733011036324666,
+    "min_sec": 1.269906297326088,
+    "max_sec": 2.4540805965662003,
+    "total_tokens": 5000,
+    "agg_tok_per_sec": 2019.1153709272874,
+    "req_per_sec": 40.38230741854575,
+    "gpu": {
+      "num_samples": 10,
+      "gpu_util_mean": 25.1,
+      "gpu_util_max": 35.0,
+      "gpu_util_min": 0.0,
+      "mem_used_mean_mb": 2631.35,
+      "mem_used_max_mb": 2646.75,
+      "mem_used_min_mb": 2496.75,
+      "mem_total_mb": 81920.0
+    }
+  },
+  {
+    "pattern": "steady",
+    "total_requests": 100,
+    "failed": 0,
+    "wall_time_sec": 10.635469894856215,
+    "p50_sec": 0.7372910231351852,
+    "p90_sec": 0.9267393417656422,
+    "p95_sec": 0.9464962417259812,
+    "p99_sec": 0.9675576855987311,
+    "mean_sec": 0.7319670520722866,
+    "std_sec": 0.1400111430492985,
+    "min_sec": 0.46641049161553383,
+    "max_sec": 0.9761712960898876,
+    "total_tokens": 5000,
+    "agg_tok_per_sec": 470.1249732668814,
+    "req_per_sec": 9.402499465337629,
+    "gpu": {
+      "num_samples": 43,
+      "gpu_util_mean": 29.674418604651162,
+      "gpu_util_max": 33.0,
+      "gpu_util_min": 25.0,
+      "mem_used_mean_mb": 2646.75,
+      "mem_used_max_mb": 2646.75,
+      "mem_used_min_mb": 2646.75,
+      "mem_total_mb": 81920.0
+    }
+  },
+  {
+    "pattern": "poisson",
+    "total_requests": 100,
+    "failed": 0,
+    "wall_time_sec": 9.715310752391815,
+    "p50_sec": 0.7617795877158642,
+    "p90_sec": 0.9368481159210207,
+    "p95_sec": 0.9755921278148889,
+    "p99_sec": 0.986501329317689,
+    "mean_sec": 0.7537243082374334,
+    "std_sec": 0.14199338249352783,
+    "min_sec": 0.4636416435241699,
+    "max_sec": 0.9902772083878517,
+    "total_tokens": 5000,
+    "agg_tok_per_sec": 514.6515770243426,
+    "req_per_sec": 10.29303154048685,
+    "gpu": {
+      "num_samples": 39,
+      "gpu_util_mean": 28.692307692307693,
+      "gpu_util_max": 32.0,
+      "gpu_util_min": 20.0,
+      "mem_used_mean_mb": 2646.75,
+      "mem_used_max_mb": 2646.75,
+      "mem_used_min_mb": 2646.75,
+      "mem_total_mb": 81920.0
+    }
+  }
+]

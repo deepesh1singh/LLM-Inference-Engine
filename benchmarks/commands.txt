@@ -1,0 +1,16 @@
+# latency_benchmark
+CUDA_VISIBLE_DEVICES=2 PYTHONPATH=. python -W ignore::DeprecationWarning benchmarks/latency/latency_benchmark.py
+PYTHONPATH=. python -W ignore::DeprecationWarning benchmarks/latency/latency_test.py
+
+# throughput_benchmark
+CUDA_VISIBLE_DEVICES=2 PYTHONPATH=. python -W ignore::DeprecationWarning benchmarks/throughput/throughput_benchmark.py
+PYTHONPATH=. python -W ignore::DeprecationWarning benchmarks/throughput/continuous_batching_benchmark.py
+PYTHONPATH=. python -W ignore::DeprecationWarning benchmarks/throughput/paged_kv_cache_benchmark.py
+
+# profiler_benchmark
+PYTHONPATH=. python -B -W ignore::DeprecationWarning benchmarks/profiler/profiler_benchmark.py
+
+# load_benchmark
+PYTHONPATH=. python benchmarks/load/load_benchmark.py --mode run --cache_type standard --out benchmarks/load/standard.json
+PYTHONPATH=. python benchmarks/load/load_benchmark.py --mode run --cache_type paged --out benchmarks/load/paged.json
+PYTHONPATH=. python benchmarks/load/load_benchmark.py --mode compare --standard_json benchmarks/load/standard.json --paged_json benchmarks/load/paged.json
